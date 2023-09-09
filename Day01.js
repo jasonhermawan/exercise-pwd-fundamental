@@ -51,11 +51,11 @@ console.log(`${angleC} derajat`);
 // 5.
 // INPUT
 const firstDate = new Date("2023-08-26");
-const secondDate = new Date("2023-09-30");
+const secondDate = new Date("2023-08-29");
 
 // PROCESS
 const miliSecond = secondDate - firstDate;
-const resultDay = Math.floor(miliSecond / 86400000);
+const resultDay = Math.abs(Math.floor(miliSecond / 86400000));
 
 // OUTPUT
 console.log(resultDay);
@@ -68,7 +68,7 @@ let numberOfDays = 400;
 let year = Math.floor(numberOfDays / 365);
 let dayLeft = numberOfDays - (year*365);
 let month = Math.floor(dayLeft / 30);
-let day = dayLeft - (month * 30)
+let day = dayLeft - (month * 30);
 
 // OUTPUT
 console.log(year);

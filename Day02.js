@@ -10,7 +10,7 @@ console.log(convert);
 
 // 2. Memeriksa angka ganjil / genap
 // INPUT
-let angka = 7;
+let angka = 3;
 
 // PROCESS OUTPUT : 
 if ( angka % 2 === 0) {
@@ -68,20 +68,19 @@ for (let a = 1; a <= numberOfFactorial; a++){
 console.log(result);
 
 // 6. Fibonacci
-// Angka fibonaci: 1,1,2,3,5,8,13,21
-// Input
-let urutanAngka = 8;
-let n0 = 1; // angka pertama
-let n1 = 1; // angka kedua
-let fn;
+// INPUT
+let n1 = 0;
+let n2 = 1;
+let urutanAngka = 7;
+let output = "";
 
 // PROCESS
-for(a = 3; a <= urutanAngka; a++){
-  fn = n0 + n1;
-  n0 = n1;
-  n1 = fn;
-  console.log(fn);
+for (let a = 1; a <= urutanAngka; a++) {
+  output+=`${n1} `
+  let nextN = n1 + n2;
+  n1 = n2;
+  n2 = nextN;
 }
 
 // OUTPUT
-console.log(fn);
+console.log(output);
