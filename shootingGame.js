@@ -80,4 +80,5 @@ class ShootingGame {
 let playerA = new Player("Edo");
 let playerB = new Player("Andrew");
 let shooting = new ShootingGame(playerA, playerB);
+
 console.log(shooting.start());
